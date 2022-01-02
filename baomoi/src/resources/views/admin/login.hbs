@@ -1,0 +1,52 @@
+<div class="main_admin">
+    <div class="table_login col-sm-9 col-md-6 col-lg-5 col-xl-5">
+        <form id="form-login" method="POST">
+            <div class="text-login">Đăng nhập quản lí</div>
+            <div class="form-group">
+                <label for="">Tài khoản </label>
+                <input id="username" name="name" class="form_controller" type="text">
+                <span class="msg_error"></span>
+            </div>
+            <div class="form-group">
+                <label for="">Mật khẩu</label>
+                <div class="password_login">
+                    <input id="passlogin" name="pass" class="form_controller" type="password">
+                    <span class="eye-pass">
+                        <i class="fas fa-eye" style="display: none;"></i>
+                        <i class="fas fa-eye-slash"></i>
+                    </span> 
+                </div>
+                <span class="msg_error"></span>
+            </div>
+            {{#if msg}}
+            <div id="msg_error" class="text-center text-danger">
+              <b><i class="fas fa-exclamation-triangle"></i> {{msg}}</b>  
+            </div>
+            {{/if}}
+            <div class="form-group text-center mt-4">
+                <input type="submit" name="sub" class="btn btn-danger mt-2" value="Đăng nhập hệ thống">
+            </div>
+        </form>
+    </div>
+</div>
+<script src="/js/passShow.js"></script>
+<script src="/js/validator.js"></script>
+<script>
+    Validator({
+    form: '#form-login',
+    message: '.msg_error',
+    formGroup: '.form-group',
+    rules: [
+        Validator.isRequired('#username', 'Nhập tên đăng nhập'),
+        Validator.isRequired('#passlogin', 'Nhập mật khẩu'),
+    ],
+    })
+
+    var msgError = document.querySelector('#msg_error');
+
+    if (msgError) {
+        setTimeout (() => {
+            msgError.style.display = 'none'
+        }, 3000)
+    }
+</script>

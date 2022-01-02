@@ -1,0 +1,32 @@
+<div class="container pt-5">
+    <div class="col-sm-10 col-md-8 col-lg-8 col-xl-7 m-auto" >
+        <h2 class="mb-5">Đăng bài</h2>
+        <form method="POST">
+            <div class="form-group">
+                <label for="exampleInputName">Tên bài viết</label>
+                <input type="text" name="namenews" class="form-control" required id="exampleInputName" aria-describedby="emailHelp" >
+            </div>
+            <div class="form-group">
+                <label for="exampleInputtext1">Link ảnh</label>
+                <input type="text" name="linkimg" class="form-control" required id="exampleInputtext1" >
+            </div>
+            <div class="form-group">
+                <label for="exampleInputtext2">Link bài</label>
+                <input type="text" name="linknews" class="form-control" required id="exampleInputtext2" >
+            </div>
+            <div class="form-group">
+                <label for="exampleInputtext3">Danh mục</label>
+                <select type="text" name="category" class="form-control" required id="exampleInputtext3" >
+                    <option value="">-- Chọn danh mục --</option>
+                    <option value="Xã hội">Xã hội</option>
+                    <option value="Văn hóa">Văn hóa</option>
+                    <option value="Giải trí">Giải trí</option>
+                    <option value="Thể thao">Thể thao</option>
+                    <option value="Kinh tế">Kinh tế</option>
+                </select>
+            </div>
+            <a href="/panel/admin" class="btn btn-secondary">Về trang quản lí</a>
+            <button type="submit" class="btn btn-primary float-right">Đăng bài</button>
+        </form>
+    </div>
+</div>

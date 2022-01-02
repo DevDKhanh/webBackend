@@ -1,0 +1,64 @@
+<div class="main_home row">
+    <div class=" cards_main">
+        <div class="first_card">
+            {{#each newsfirst}}
+            <a href="{{this.linknews}}" target="_blank">
+            <div class="img_first">
+                <img src="{{this.linkimg}}" alt="">
+            </div>
+            <div class="title_first">
+                {{this.namenews}}
+            </div>
+            </a>
+            {{/each}}
+        </div>
+        <div class="cards_hot row">
+            {{#each newright}}
+            <div class="col-4">
+                <div class="hot_item">
+                    <a href="{{this.linknews}}" target="_blank">
+                        <div class="img_hot">
+                            <img src="{{this.linkimg}}" alt="">
+                        </div>
+                        <div class="title_hot">
+                            {{this.namenews}}
+                        </div>
+                    </a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="cards_item row">
+            {{#each newleft}}
+            <div class="col-12 margin-card">
+                <div class="hot_item">
+                    <a class="items_link" href="{{this.linknews}}" target="_blank">
+                        <div class="img_hot col-3">
+                            <img src="{{this.linkimg}}" alt="">
+                        </div>
+                        <div class="title_hot col-9">
+                            {{this.namenews}}
+                        </div>
+                    </a>
+                </div>
+            </div>
+            {{/each}}
+        </div>   
+    </div>
+    <div class="side_cards">
+        {{#each newsupdate}}
+        <div class="col-12 side_cards-m">
+            <a href="{{this.linknews}}" target="_blank">
+            <div class="item_side row">
+                <div class="col-4 img_side">
+                    <img src="{{this.linkimg}}" alt="">
+                </div>
+                <div class="title_side col-8">
+                    {{this.namenews}}
+                </div>
+            </div>
+            </a>
+        </div>
+        {{/each}}
+    </div>
+</div>

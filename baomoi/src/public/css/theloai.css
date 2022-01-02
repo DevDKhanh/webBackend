@@ -1,0 +1,43 @@
+.main_category {
+    min-height: 80vh;
+}
+
+.card_category {
+    overflow: hidden;
+    min-height: 300px;
+    box-shadow: 0 0 2px #000;
+}
+
+.card_category:hover {
+    opacity: .8;
+    box-shadow: 0 0 5px #000;
+}
+
+.card_category > a {
+    color: #000;
+}
+
+.card_category > a:hover {
+    text-decoration: none;
+}
+
+.img_card-category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+
+.img_card-category > img {
+    width: 100%;
+}
+
+.title_card-category {
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}

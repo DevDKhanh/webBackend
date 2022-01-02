@@ -1,0 +1,122 @@
+.header {
+    width: 100%;
+}
+
+.menu_logo {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.menu_logo img {
+    width: 100%;
+}
+
+.menu_logo-left {
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu_logo-left > img {
+    position: absolute;
+    width: 110px;
+    left: -10px;
+    top: -20px;
+}
+
+.logo_img {
+    width: 130px;
+}
+
+.logo_img > a {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.logo_img > a:hover {
+    text-decoration: none;
+}
+
+.date_header {
+    margin-left: 60px;
+    font-size: 1rem;
+}
+
+.search_header {
+    padding: 0 100px;
+}
+
+.form_search-header {
+    display: flex;
+    align-items: center;
+}
+
+.form_group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form_search-header > .form_group > input {
+    padding: 5px 30px;
+    border: 1px solid rgb(136, 136, 136);
+    outline: none;
+    width: 450px;
+}
+
+.form_search-header > .form_group > input::placeholder {
+    font-size: .9rem;
+}
+
+.form_search-header > .form_group > input:focus {
+    border: 1px solid rgb(12, 167, 240);
+    box-shadow: 0 0 2px rgb(12, 167, 240);
+}
+
+.form_search-header > .form_group > button {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    right: 1px;
+    position: absolute;
+    padding: 5px 20px;
+    border-radius: 0 1rem 1rem 0;
+    margin-left: -5px;
+    border: none;
+    outline: none;
+}
+
+.form_search-header > .form_group > button:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.menu_items {
+    display: flex;
+    background-color:#2fa1b3;
+    padding: 0 100px;
+}
+
+.menu_items.fixed_menu {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+} 
+
+.item_link > a {
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    color: #fff;
+    padding: 0 10px;
+    line-height: 40px;
+    border-left: 1px solid rgba(255, 255, 255, 0.395);
+}
+
+.item_link > a:hover {
+    text-decoration: none;
+    background-color: #2b94a5;
+}

@@ -1,0 +1,35 @@
+<div class="header">
+    <div class="menu_logo">
+        <div class="menu_logo-left">
+            <div class="logo_img"> <a href="/"><img src="/img/logoo.png" alt=""></a></div>
+        </div>
+        <div class="search_header">
+            <form class="form_search-header" action="/timkiem">
+                <div class="form_group">
+                    <input type="text" name="key" placeholder="Nhập nội dung tìm kiếm">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="menu_items">
+        <div class="item_link"><a href="/"> Trang chủ </a></div>
+        <div class="item_link"><a href="/xa-hoi"> Xã hội </a></div>
+        <div class="item_link"><a href="/van-hoa"> Văn hóa </a></div>
+        <div class="item_link"><a href="/kinh-te"> Kinh tế </a></div>
+        <div class="item_link"><a href="/giai-tri"> Giải trí </a></div>
+        <div class="item_link"><a href="/the-thao"> Thể thao </a></div>
+    </div>
+</div>
+<script>
+    const menuFixed = document.querySelector('.menu_items');
+
+    document.onscroll = function () {
+        if(window.scrollY > 60) {
+            menuFixed.classList.add('fixed_menu')
+        }
+        else {
+            menuFixed.classList.remove('fixed_menu')
+        }
+    }
+</script>

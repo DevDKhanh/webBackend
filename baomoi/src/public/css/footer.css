@@ -1,0 +1,39 @@
+.footer {
+    background-color: #2fa1b3;
+}
+
+.header_footer {
+    display: flex;
+}
+
+.size_new {
+    padding: 10px 100px;
+}
+
+.logo_footer {
+    height: 45px;
+}
+
+.logo_footer > a {
+    display: block;
+    background-image: url(/img/desktop-logo.png);
+    width: 180px;
+    height: 40px;
+    background-size: 180px 80px;
+    background-position: 0 0;
+}
+
+.logo_footer > a:hover {
+    opacity: .8;
+}
+
+.footer_contact {
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.item_contact > a {
+    color: #000;
+    font-weight: 600;
+    font-size: .9rem;
+}

@@ -1,0 +1,30 @@
+<div class="container pt-4">
+    <div class="">
+        <a class="btn btn-primary" href="/panel/admin/post">Thêm bài viết <i class="fas fa-plus"></i></a>
+        <a class="btn btn-danger float-right" href="/logout">Logout</a>
+    </div>
+    <div><h4>Số bài viết: {{num}}</h4></div>
+    <div class="mt-4">
+        {{{pagination num perpage page}}} 
+        <table class="table table-striped table-dark">
+            <thead>
+                <tr>
+                <th scope="col">Tên bài</th>
+                <th scope="col">Thể loại</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each data}}
+                <tr>
+                    <td>{{this.namenews}}</td>
+                    <td>{{this.category}}</td>
+                    <td><a class="btn btn-danger" href="/panel/admin/delete/{{this._id}}">Xóa bài viết</a></td>
+                    <td><a class="btn btn-info" href="/panel/admin/update/{{this._id}}">Chỉnh sửa bài viết</a></td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
